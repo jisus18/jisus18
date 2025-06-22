@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* barra de navegasion */
+.log {
+    height: 50px;
+    width: 50px;
+}
+
+.comtainer {
+    display: flex;
+    font-size: 25px;
+    height: 100px;
+    background: black;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: black;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+
+}
+
+.navlink,
+.drop-drown li {
+    list-style: none;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    font-weight: 30px;
+    cursor: pointer;
+
+}
+
+.rs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li,
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.drop-drown {
+    position: absolute;
+    padding: 0.5rem 0;
+    margin: 0.5rem -0.5rem;
+    background: black;
+    color: #0090ff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    font-size: 12px;
+    display: none;
+    z-index: +1;
+}
+
+.navlink:hover {
+    background-color: #0090ff;
+    color: black;
+    border-radius: 0.5rem;
+
+}
+
+.services:hover .drop-drown {
+    display: block;
+
+}
+
+.services a {
+    display: flex;
+}
+
+.services .dropdown-icon {
+    font-size: 20px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.services:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.drop-drown li:hover {
+    background: #0090ff;
+    color: white;
+   
+}
+
+
+/* comienzo  de banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: calc(60vh - 100px);
+    background-color: #f5f5f5;
+    background-size: cover;
+    background-position: center;
+    transition: all .2s ease-in-out;
+    background-image: url('imgs/banner1.jpeg');
+    animation: banner 16s infinite linear;
+
+
+}
+
+.banner-content {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 22, 40, .6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner-content h1 {
+    margin: 0%;
+    padding: 0%;
+    padding-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.banner-content a {
+    text-decoration: none;
+    color: white;
+    padding: 9px 20px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+}
+
+.banner-content a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+@keyframes banner {
+    0% {
+        background-image: url('imgs/banner1.jpeg');
+    }
+
+    25% {
+        background-image: url('imgs/banner1.jpeg');
+    }
+
+    26% {
+        background-image: url('imgs/BANNER5.jpg');
+    }
+
+    50% {
+        background-image: url('imgs/BANNER5.jpg');
+    }
+
+    51% {
+        background-image: url('imgs/BANNER6.jpg');
+    }
+
+    75% {
+        background-image: url('imgs/BANNER6.jpg');
+    }
+
+    76% {
+        background-image: url('imgs/banner4.jpg');
+    }
+
+    100% {
+        background-image: url('imgs/banner4.jpg');
+    }
+}
+
+/* busqueda*/
+.nover {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.busqueda {
+    background-color: white;
+    border: solid 1px #ccc;
+    width: 700px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.busqueda input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 10px;
+    flex: 1;
+    font-size: 18px;
+}
+
+.busqueda .acciones button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.3 ease-in-out;
+
+}
+
+.busqueda .acciones button:hover {
+    color: #2979e2;
+
+}
+
+.busqueda .acciones button .paja:hover {
+    color: #2979e2;
+
+}
+
+.busqueda .acciones {
+    display: flex;
+    gap: 5px;
+
+}
+
+.busqueda:focus-within {
+    border: solid 1px #aaa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.paja {
+    color: #999;
+    text-decoration: none;
+}
+
+/* contenedor de texto*/
+.containerrr {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 30px;
+}
+
+.in {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 7000px;
+}
+
+.p {
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.i {
+    font-weight: 600;
+}
+
+.i {
+    font-size: 2rem;
+}
+
+/*crta*/
+.cartass {
+    display: flex;
+}
+
+.cartas {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.responsi {
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+}
+
+.mgs {
+    width: 100%;
+    height: 200px;
+}
+
+.diseno {
+
+    width: 100%;
+    height: 12px;
+    background-color: #2979e2;
+}
+
+.carta:hover {
+    border: solid 1px #aaa;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
+}
+
+.carta {
+    margin: 15px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    height: 520px;
+    width: 350px;
+    border: solid 1px #ccc;
+}
+
+.inforr {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.inf {
+    width: 92%;
+    display: flex;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.ytr {
+    text-decoration: none;
+    color: #2979e2;
+}
+
+.hj {
+
+    margin: 5px 5px 1px 5px;
+}
+
+.pp {
+
+    color: #2979e2;
+    margin: 1px 0px 10px 15px;
+}
+
+.nosemueve {
+    align-items: center;
+
+    display: flex;
+    width: 92%;
+    text-align: start;
+}
+
+.hl {
+    color: #2979e2;
+    margin: 10px 0px 5px 0px;
+}
+
+/*pata de pagina*/
+footer {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.contenedorr {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.lgo {
+    width: 50px;
+    height: 50px;
+}
+
+.contme {
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.innfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coll:hover {
+    padding: 15px;
+    fill: #2979e2;
+}
+
+.servicio {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.letra {
+    color: #2979e2;
+    margin: 4px;
+}
+
+.ofina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mgi {
+    margin: 10px;
+}
+
+.mgi:hover {
+
+    background: 30px;
+    background-color: #2979e2;
+}
+
+.mgis:hover {
+    border-radius: 50%;
+    background: 100px;
+    background-color: #2979e2;
+}
+
+.j {
+    text-decoration: none;
+    color: white;
+}
+
+.j:hover {
+    color: #2979e2;
+}
+
+/* responsive o adapcion de pantalla*/
+@media screen and (max-width: 1200px) {
+
+    .fondo {
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        width: 500px;
+        background-color: rgb(4, 4, 4);
+
+    }
+
+    .busqueda {
+        background-color: white;
+        border: solid 1px #ccc;
+        width: 500px;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+        transition: all 0.3s ease-in-out;
+
+    }
+    .responsi {
+    display: none;
+  
+    justify-content: center;
+    align-items: center;
+}
+.carta {
+    margin: 15px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    height: 540px;
+    width: 250px;
+    border: solid 1px #ccc;
+}
+
+
+#ps{
+    display: none;
+}
+.ofina{
+    display: none;
+}
+
+
+}

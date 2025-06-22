@@ -1,0 +1,139 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+    align-items: center;
+    margin: 80px auto;
+    width: 90%;
+    height: 600px;
+    display: grid;
+    grid-row: 1fr 1fr 1fr;
+
+}
+
+.botones {
+    font-size: 18px;
+    font-family: serif;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    color: #2a2a2a;
+    text-decoration: none;
+
+}
+
+.botoness {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    width: 70%;
+
+}
+
+.menu {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    height: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    border-top: 2px solid rgb(82, 81, 81);
+}
+
+.div {
+    font-family: serif;
+    width: 100%;
+    border: 2px solid rgb(82, 81, 81);
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pri {
+    text-align: center;
+    width: 30%;
+    background-color: #2979e2;
+}
+p{
+    color: #767676;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    background-color: #2a2a2a;
+
+}
+
+.secod {
+    margin-top: 60px;
+    
+    height: 100%;
+    width: 80%;
+}
+
+.log {
+    height: 100%;
+    width: 100%;
+}
+h1, h2, h3{
+    margin: 0;
+    padding: 0;
+}
+.lgo{
+    height: 66px;
+    width: 262.5;
+
+}
+.botm{
+    margin-bottom: -40px;
+    align-items: center;
+    display: flex;
+}
+.nnn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btmo{
+    gap: 5px;
+}
+/* responsive o adapcion de pantalla*/
+@media screen and (max-width: 1200px) {
+
+.contenedor {
+    align-items: center;
+    margin: 80px auto;
+    width: 90%;
+    height: 200px;
+    display: grid;
+    grid-row: 1fr 1fr 1fr;
+
+}
+
+.picture{
+    height: 300px;
+}
+#pss{
+    display: none;
+}
+.menu {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    border-top: 2px solid rgb(82, 81, 81);
+}
+h2{
+    display: none;
+}
+}

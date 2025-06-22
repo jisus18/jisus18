@@ -1,0 +1,246 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* barra navegacion*/
+.cabeza{
+    height: 150px;
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mg{
+    width: 100px;
+    height: 100px;
+}
+/* banner*/
+.banner{
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+    height: calc(60vh - 100px);
+    background-color: #f5f5f5;
+    background-size: cover;
+    background-position: center;
+    background-image: url('imgs/Escritorio-Cafe-Claro-1.jpg');
+  
+
+}
+.banner-content{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 22, 40, .6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.texto{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+} 
+/*cartas*/
+.cartas{
+    display: flex;
+  
+   width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.mgs{
+    width: 100%;
+    height: 200px;
+}
+.diseno{
+   
+    width: 100%;
+    height: 12px;
+    background-color: greenyellow;
+}
+.carta:hover{
+    border: solid 1px #aaa;
+     box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
+}
+.carta{
+    margin: 15px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    height: 500px;
+    width: 350px;
+    border: solid 1px #ccc;
+}
+.inforr{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    text-align: center;
+}
+.inf{
+    width: 92%;
+    display: flex;
+   text-align: start;
+    justify-content: center;
+    align-items: center;
+   font-size: 15px;
+}
+.ytr{
+    text-decoration: none;
+    color: greenyellow;
+}
+h2{
+ 
+ margin: 5px 5px 1px 5px;
+}
+.p{
+    
+    color: greenyellow;
+    margin: 1px 0px 10px 15px;
+}
+.nosemueve{
+   align-items: center;
+  
+    display: flex;
+    width: 92%;
+    text-align: start;
+}
+h5{
+    color: greenyellow;
+    margin: 10px 0px 5px 0px;
+}
+/*pie de pagina*/
+footer{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.contenedorr{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.lgo{
+    width: 50px;
+    height: 50px;
+}
+ 
+.contme{
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.innfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coll:hover{
+    padding: 15px;
+  fill:#2979e2;
+}
+
+.servicio{
+    color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.letra{
+    color: greenyellow;
+    margin: 4px;
+}
+
+.ofina{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mgi{
+    margin: 10px;
+}
+.mgi:hover{
+    
+    background: 30px;
+    background-color: #2979e2;
+}
+.mgis:hover{
+    border-radius: 50%;
+    background: 100px;
+    background-color: #2979e2;
+}
+
+.j{
+    text-decoration: none;
+    color: white;
+}
+
+.j:hover{
+color:#2979e2 ;
+}
+/* responsive o adapcion de pantalla*/
+@media screen and (max-width: 1100px){
+    .cartas{
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+    .banner{
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+    height: calc(50vh - 100px);
+    background-color: #f5f5f5;
+    background-size: cover;
+    background-position: center;
+    background-image: url('imgs/Escritorio-Cafe-Claro-1.jpg');
+  
+
+}
+.banner-content{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 22, 40, .6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.ofina{
+    display: none;
+}
+
+}

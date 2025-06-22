@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="imgs/Android_Studio_icon_(2023).svg.png">
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="login-container">
+            <a href="Banner.html" class="b">
+                <h2>welcome</h2>
+            </a>
+            <p>seleccina el metodo de autenticacion</p>
+
+            <form action="">
+                <p>
+                    <label for="username">username</label>
+                    <input class="input" name="username" id="username">
+                </p>
+                <p>
+                    <label for="password">Password</label>
+                    <input class="input" name="password" id="passaword">
+                <div class="options">
+                    <div>
+                        rember me
+                        <input type="checkbox" name="rember me " id="rememberme" />
+                    </div>
+                    <div>
+                        <a href="#">I forgot my passaword</a>
+                    </div>
+                </div>
+                <p>
+                    <input type="submit" class="btn btn-login" value="log in" />
+                </p>
+                <div class="providers">
+                    <span>choose another method to authenticate</span>
+                    <button class="btn btn-google"><a href="https://www.google.com/" class="ghsg">google</a></button>
+                    <button class="btn btn-facebook"><a class="ghsf"
+                            href="https://www.facebook.com/">facebook</a></button>
+                    <button class="btn btn-twitter"><a class="ghst" href="https://x.com/">twitter</a></button>
+                </div>
+            </form>
+        </div>
+        <div class="welcome-screen-container"><dotlottie-player
+                src="https://lottie.host/b26cb85a-1665-4d73-8984-a0f30f8eec08/TXIKjs0LyE.lottie"
+                background="transparent" speed="1" style="width: 600px; height: 600px" loop autoplay></dotlottie-player>
+        </div>
+        </div>
+
+</body>
+
+</html>
